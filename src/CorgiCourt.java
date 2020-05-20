@@ -13,7 +13,7 @@ public class CorgiCourt {
 			"Saturday", "Sunday"};
 	HashMap<String, Day> week;
 	Resident Lake = new Human();
-	Resident Eleonor = new Human();
+	Resident Ellie = new Human();
 	Resident Cory = new Human();
 	Resident Ada = new Animal();
 	Resident Babbage = new Animal();
@@ -24,6 +24,31 @@ public class CorgiCourt {
 		week.put("Saturday", new LeisureDay()); week.put("Sunday", new LeisureDay());
 	}
 	void printDay() {System.out.println("Current day: " + DAYS_OF_WEEK[currentDay]);}
+	void executeDay() {
+		printDay(); switch (DAYS_OF_WEEK[currentDay]) {
+			case "Monday":
+				executeMonday();
+			case "Tuesday":
+				executeTuesday();
+			case "Wednesday":
+				executeWednesday();
+			case "Thursday":
+				executeThursday();
+			case "Friday":
+				executeFriday();
+			case "Saturday":
+				executeSaturday();
+			case "Sunday":
+				executeSunday();
+		} updateCurrentDay();
+	}
+	void executeMonday() {}
+	void executeTuesday() {}
+	void executeWednesday() {}
+	void executeThursday() {}
+	void executeFriday() {}
+	void executeSaturday() {}
+	void executeSunday() {}
 	void updateCurrentDay() {currentDay += 1;}
 
 }
