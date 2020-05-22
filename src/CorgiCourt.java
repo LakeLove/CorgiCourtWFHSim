@@ -50,5 +50,4 @@ public class CorgiCourt {
 	void executeSaturday() {}
 	void executeSunday() {}
 	void updateCurrentDay() {currentDay += 1;}
-
 }
