@@ -1,14 +1,21 @@
 package residents;
-public class Human extends Resident {
-	public Human() {
+import interfaces.resident.Coder;
+public class Human extends Resident implements Coder {
+	public Human(String name) {
+		super(name);
 	}
 	public void sleep() {
-		System.out.println("Time to sleep.");
 	}
 	public void nap() {
-		System.out.println("Time to take a nap.");
+	}
+	public void sleepIn() {
 	}
 	public void eat() {
-		System.out.println("Time to eat.");
+	}
+	public void snack() {
+	}
+	public void codeForWork() {
+	}
+	public void codeForFun() {
 	}
 }
