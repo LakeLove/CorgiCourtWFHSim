@@ -12,12 +12,12 @@ public class CorgiCourt {
 	public static final String[] DAYS_OF_WEEK = new String[] {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 			"Saturday", "Sunday"};
 	HashMap<String, Day> week;
-	Resident Lake = new Human();
-	Resident Ellie = new Human();
-	Resident Cory = new Human();
-	Resident Ada = new Animal();
-	Resident Babbage = new Animal();
-	Resident Pumpkin = new Animal();
+	Resident Lake = new Human("Lake");
+	Resident Ellie = new Human("Ellie");
+	Resident Cory = new Human("Cory");
+	Resident Ada = new Animal("Ada");
+	Resident Babbage = new Animal("Babbage");
+	Resident Pumpkin = new Animal("Pumpkin");
 	public CorgiCourt() {
 		currentDay = 0; week = new HashMap<>(); week.put("Monday", new WorkDay()); week.put("Tuesday", new WorkDay());
 		week.put("Wednesday", new WorkDay()); week.put("Thursday", new WorkDay()); week.put("Friday", new WorkDay());
