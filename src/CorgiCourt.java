@@ -23,23 +23,18 @@ public class CorgiCourt {
 		week.put("Wednesday", new WorkDay()); week.put("Thursday", new WorkDay()); week.put("Friday", new WorkDay());
 		week.put("Saturday", new LeisureDay()); week.put("Sunday", new LeisureDay());
 	}
-	void printDay() {System.out.println("Current day: " + DAYS_OF_WEEK[currentDay]);}
+	void printDay() {
+		System.out.println("Current day: " + DAYS_OF_WEEK[currentDay]);
+	}
 	void executeDay() {
 		printDay(); switch (DAYS_OF_WEEK[currentDay]) {
-			case "Monday":
-				executeMonday();
-			case "Tuesday":
-				executeTuesday();
-			case "Wednesday":
-				executeWednesday();
-			case "Thursday":
-				executeThursday();
-			case "Friday":
-				executeFriday();
-			case "Saturday":
-				executeSaturday();
-			case "Sunday":
-				executeSunday();
+			case "Monday": executeMonday(); break;
+			case "Tuesday": executeTuesday(); break;
+			case "Wednesday": executeWednesday(); break;
+			case "Thursday": executeThursday(); break;
+			case "Friday": executeFriday(); break;
+			case "Saturday": executeSaturday(); break;
+			case "Sunday": executeSunday(); break;
 		} updateCurrentDay();
 	}
 	void executeMonday() {}
