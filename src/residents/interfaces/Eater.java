@@ -1,4 +1,4 @@
-package interfaces.resident;
+package residents.interfaces;
 public interface Eater {
 	void eat();
 	void snack();

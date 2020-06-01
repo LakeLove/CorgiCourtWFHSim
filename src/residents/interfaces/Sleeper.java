@@ -1,4 +1,4 @@
-package interfaces.resident;
+package residents.interfaces;
 public interface Sleeper {
 	void sleep();
 	void nap();

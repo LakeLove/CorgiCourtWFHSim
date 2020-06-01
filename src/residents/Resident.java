@@ -1,6 +1,6 @@
 package residents;
-import interfaces.resident.Eater;
-import interfaces.resident.Sleeper;
+import residents.interfaces.Eater;
+import residents.interfaces.Sleeper;
 public abstract class Resident implements Sleeper, Eater {
 	public String name;
 	public Resident(String name) {

@@ -1,7 +1,7 @@
 public class WFHSim {
 	public static void main(String[] args) {
 		System.out.println(introduction()); CorgiCourt typicalWeek = new CorgiCourt();
-		for (int i = 0; i < CorgiCourt.DAYS_OF_WEEK.length; i++) {
+		for (int i = 0; i < DayOfTheWeek.values().length; i++) {
 			typicalWeek.executeDay();
 		}
 	}

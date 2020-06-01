@@ -1,5 +1,5 @@
 package residents;
-import interfaces.resident.Coder;
+import residents.interfaces.Coder;
 public class Human extends Resident implements Coder {
 	public Human(String name) {
 		super(name);
