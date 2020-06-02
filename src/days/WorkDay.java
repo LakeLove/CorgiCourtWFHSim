@@ -1,10 +1,11 @@
 package days;
 
+import days.tasks.interfaces.Worker;
 import residents.Human;
 
 import static court.CorgiCourt.dailyRecap;
 
-public class WorkDay extends Day {
+public class WorkDay extends Day implements Worker {
 	Human worker;
 	public WorkDay(Human worker) {
 		this.worker = worker;
